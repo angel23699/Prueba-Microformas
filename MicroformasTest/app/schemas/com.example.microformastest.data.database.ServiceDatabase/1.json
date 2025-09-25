@@ -1,0 +1,79 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "c02930ebe0261e6ee65522c93d5d1acd",
+    "entities": [
+      {
+        "tableName": "services",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`idAr` INTEGER NOT NULL, `desc_cliente` TEXT NOT NULL, `desc_servicio` TEXT NOT NULL, `direccion` TEXT NOT NULL, `colonia` TEXT NOT NULL, `poblacion` TEXT NOT NULL, `estado` TEXT NOT NULL, `cp` TEXT NOT NULL, `telefono` TEXT NOT NULL, PRIMARY KEY(`idAr`))",
+        "fields": [
+          {
+            "fieldPath": "idAr",
+            "columnName": "idAr",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descCliente",
+            "columnName": "desc_cliente",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descServicio",
+            "columnName": "desc_servicio",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "direccion",
+            "columnName": "direccion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "colonia",
+            "columnName": "colonia",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "poblacion",
+            "columnName": "poblacion",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "estado",
+            "columnName": "estado",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cp",
+            "columnName": "cp",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "telefono",
+            "columnName": "telefono",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "idAr"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c02930ebe0261e6ee65522c93d5d1acd')"
+    ]
+  }
+}
