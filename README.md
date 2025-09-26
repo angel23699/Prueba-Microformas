@@ -44,6 +44,16 @@ app/
 ├─ utils/             # Constantes, mappers, helpers
 └─ viewmodel/         # ViewModels
 
+```
+MedicalApp/
+│── Util/
+│   ├── DAO/
+│   ├── Entity/
+│── View/
+│── ViewModel/
+│── Assets/
+│── README.md
+```
 
 ⸻
 
