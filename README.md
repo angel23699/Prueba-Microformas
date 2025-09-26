@@ -39,27 +39,12 @@ app/
 │  ├─ remote/         # API interfaces (Retrofit)
 │  └─ repository/     # Repository e implementación
 ├─ di/                # Módulos Hilt
+├─ domain/                #
+├─ navigation/                #
+├─ presentation/                #
 ├─ ui/
 │  ├─ screens/        # Pantallas Compose
 │  └─ components/     # Composables reutilizables
 ├─ utils/             # Constantes, mappers, helpers
-└─ viewmodel/         # ViewModels
+└─ TestApplication/         # ViewModels
 ```
-
-```
-MedicalApp/
-│── Util/
-│   ├── DAO/
-│   ├── Entity/
-│── View/
-│── ViewModel/
-│── Assets/
-│── README.md
-```
-
-⸻
-
-🚀 Instalación / Setup
-- Clonar el repositorio:
-
-git clone https://github.com
