@@ -41,17 +41,19 @@ app/
 │  └─ repository/        # Implementación del repository (auth, services)
 ├─ di/                   # Inyeción de una dependencia general para toda la app (Dispatchers.IO)
 ├─ domain/
-│  ├─ dataStore+Tink/    #
-│  ├─ interfaces/        # 
-│  └─ service            # 
-├─ navigation/           #
+│  ├─ dataStore+Tink/    # Implementación del guardado de un (key - value) con dataStore y el cifrado tink
+│  ├─ interfaces/        # Interfaces (AuthRepository, ServiceRepository, LocalDataSource)
+│  └─ service            # Modelo Service
+├─ navigation/           # Clase encargada de la navegación de pantallas (NavHost)
 ├─ presentation/
 │  └─ screens/
-│     ├─ login/          # 
-│     └─ services/       # 
+│     ├─ login/          # Pantalla de Login con su state, actions, events y viewModel
+│     └─ services/       # Pantalla de Services (listado de servicios) con su state, actions, events y viewModel
 ├─ ui/
-│  └─ theme/             # 
-├─ Utils/                # Constantes
-├─ MainActivity          # 
-└─ TestApplication       # 
+│  └─ theme/             # Config del theme por default (autogenerado por el IDE)
+├─ Utils/                # Algunas constantes
+├─ MainActivity          # @AndroidEntryPoint
+└─ TestApplication       # @HiltAndroidApp
 ```
+
+Obvio hay y puede haber mejores formas de acomodar/nombrar los packages y clases, yo sin problemas puedo seguir lineamientos
