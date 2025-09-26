@@ -35,10 +35,11 @@ Características principales:
 ```
 app/
 ├─ data/
-│  ├─ local/          # Room / DataStore
-│  ├─ remote/         # API interfaces (Retrofit)
-│  └─ repository/     # Repository e implementación
-├─ di/                # Módulos Hilt
+│  ├─ database/          # Room (DAO, Database, Entity, etc)
+│  ├─ api/               # API interfaces (Retrofit)
+│  ├─ di/                # Inyección de dependencias del package data (api, database, dataStore, repository)
+│  └─ repository/        # Implementación del repository (auth, services)
+├─ di/                   # Módulos Hilt
 ├─ domain/                #
 ├─ navigation/                #
 ├─ presentation/                #
