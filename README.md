@@ -39,13 +39,19 @@ app/
 │  ├─ api/               # API interfaces (Retrofit)
 │  ├─ di/                # Inyección de dependencias del package data (api, database, dataStore, repository)
 │  └─ repository/        # Implementación del repository (auth, services)
-├─ di/                   # Módulos Hilt
-├─ domain/                #
-├─ navigation/                #
-├─ presentation/                #
+├─ di/                   # Inyeción de una dependencia general para toda la app (Dispatchers.IO)
+├─ domain/
+│  ├─ dataStore+Tink/    #
+│  ├─ interfaces/        # 
+│  └─ service            # 
+├─ navigation/           #
+├─ presentation/
+│  └─ screens/
+│     ├─ login/          # 
+│     └─ services/       # 
 ├─ ui/
-│  ├─ screens/        # Pantallas Compose
-│  └─ components/     # Composables reutilizables
-├─ utils/             # Constantes, mappers, helpers
-└─ TestApplication/         # ViewModels
+│  └─ theme/             # 
+├─ Utils/                # Constantes
+├─ MainActivity          # 
+└─ TestApplication       # 
 ```
