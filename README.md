@@ -32,6 +32,7 @@ Características principales:
 
 📂 Estructura del proyecto
 
+```
 app/
 ├─ data/
 │  ├─ local/          # Room / DataStore
@@ -43,6 +44,7 @@ app/
 │  └─ components/     # Composables reutilizables
 ├─ utils/             # Constantes, mappers, helpers
 └─ viewmodel/         # ViewModels
+```
 
 ```
 MedicalApp/
