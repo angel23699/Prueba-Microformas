@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agencia de Apps — Desarrollo de apps móviles a medida</title>
+  <meta name="description" content="Creamos apps móviles custom (iOS y Android). Diseño, desarrollo y publicación en tiendas. Cotizaciones rápidas y soporte técnico." />
+  <meta property="og:title" content="Agencia de Apps — Desarrollo móvil a medida" />
+  <meta property="og:description" content="Creamos apps móviles custom (iOS y Android). Diseño, desarrollo y publicación en tiendas." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    :root{
+      --accent:#06b6d4;
+      --bg:#0f172a;
+      --card:#071428;
+      --text:#e6eef6;
+      --muted:#9fb5b6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,#071024 0%, #061526 100%);
+      color:var(--text);
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:980px;margin:36px auto;padding:20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#0369a1);display:flex;align-items:center;justify-content:center;font-weight:700;color:#022}
+    h1{font-size:22px;margin:0}
+    p.lead{margin:6px 0 0;color:#cfe8ea}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;margin-top:28px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .actions{display:flex;gap:10px;margin-top:14px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#022}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--text);padding:9px 12px}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .feature{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;font-size:14px}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+    form label{display:block;margin-bottom:6px;font-size:13px;color:#cfe8ea}
+    form input, form textarea, form select{width:100%;padding:10px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text);font-size:14px}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .proj{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:8px}
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    @media(max-width:920px){.hero{grid-template-columns:1fr;}.portfolio{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">AA</div>
+        <div>
+          <h1>Agencia de Apps — Desarrollo móvil a medida</h1>
+          <p class="lead">Diseño, desarrollo y publicación de apps iOS y Android. Soluciones para startups, pymes y proyectos a medida.</p>
+        </div>
+      </div>
+      
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="card">
+          <h2>¿Necesitas una app móvil? Nosotros la construimos</h2>
+          <p style="margin-top:8px;color:#cfe8ea">Nos especializamos en apps custom: e-commerce, reservas, delivery, apps corporativas y MVPs. Entregamos apps publicadas en App Store / Play Store.</p>
+
+          <div class="features" aria-hidden>
+            <div class="feature">
+              <strong>iOS & Android</strong>
+              <div>Apps nativas o multiplataforma (Swift, Kotlin, Flutter, React Native).</div>
+            </div>
+            <div class="feature">
+              <strong>Diseño UI/UX</strong>
+              <div>Wireframes, prototipos y UI listos para desarrollo.</div>
+            </div>
+            <div class="feature">
+              <strong>Publicación</strong>
+              <div>Subimos la app a App Store y Play Store, soporte con requerimientos y screenshots.</div>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+      
+    </section>
+
+    
+
+    <section id="contact" style="margin-top:18px">
+      <h3>¿Listo para empezar?</h3>
+      <p>Envíanos los detalles de tu proyecto y te mandamos una cotización.</p>
+      <p style="font-size:13px;color:var(--muted)">RFC y datos fiscales serán solicitados al avanzar con la contratación para facturación. Pide también opciones de mantenimiento y MDM si necesitas kioskos o despliegues empresariales.</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Agencia de Apps — Hecho con ❤️. <br>
+      Email: darkangel23699@gmail.com — Tel: +52 56 3145 0846
+    </footer>
+  </div>
+
+  <script>
+    // Ajusta año automáticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Sugerencia: reemplaza el action del form por tu endpoint (Formspree, Netlify Forms, Google Apps Script, Zapier, etc.)
+    // Para recibir leads sin backend, puedes usar: https://formspree.io/ o https://www.formsubmit.co/
+  </script>
+</body>
+</html>
